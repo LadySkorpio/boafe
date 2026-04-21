@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from '@vercel/analytics/astro';
 interface Props { title?: string; description?: string; }
 const { title = 'BOAFÉ — Porque "minha palavra vale" não paga contas', description = 'Plataforma para freelancers e prestadores de serviço. Artigos, perfis de caloteiros e recursos práticos para quem trabalha por conta própria.' } = Astro.props;
 ---
@@ -14,5 +15,6 @@ const { title = 'BOAFÉ — Porque "minha palavra vale" não paga contas', descr
   </head>
   <body>
     <slot />
+    <Analytics />
   </body>
 </html>
