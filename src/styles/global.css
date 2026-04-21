@@ -50,6 +50,13 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 1px 0 rgba(10,10,10,0.06);
   padding-block: clamp(10px, 1.6vw, 16px);
 }
+body.nav-open .nav,
+body.nav-open .nav.scrolled {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: transparent;
+  box-shadow: none;
+}
 body { padding-top: clamp(80px, 10vw, 110px); }
 .nav-brand { display: inline-flex; }
 .nav-drawer-header,
