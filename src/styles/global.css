@@ -943,6 +943,7 @@ main { position: relative; }
 /* MOBILE (≤ 480px) — iPhone 14 Pro Max e similares */
 @media (max-width: 480px) {
   .h1 { font-size: 38px; line-height: 1; }
+  .newsletter h2 { font-size: 40px; }
 }
 
 /* MOBILE PEQUENO (≤ 380px) — iPhone SE */
