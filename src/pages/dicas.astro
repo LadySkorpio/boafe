@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Newsletter from '../components/Newsletter.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { dicas } from '../data/content';
+---
+<Base title="10 Dicas para Reconhecer um Caloteiro — BOAFÉ">
+  <Nav />
+  <main>
+    <Breadcrumb items={[{ label: 'Dicas' }]} />
+    <div class="list-page">
+      <h1>10 Dicas pra <span class="accent-teal">Reconhecer</span> um Caloteiro</h1>
+      <p class="list-page-lead">Dez sinais para reconhecer um caloteiro antes de assinar qualquer coisa.</p>
+
+      <ol class="items">
+        {dicas.map((d) => (
+          <li class="item">
+            <span class="item-num"></span>
+            <div>
+              <div class="item-title">{d.title}</div>
+              <p class="item-body">{d.body}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+
+    <section class="cta-box container" aria-label="Download do modelo de contrato">
+      <div class="cta-box-inner">
+        <div class="cta-box-head">
+          <h2 class="cta-box-title">Modelo de contrato <em>grátis</em> para download.</h2>
+        </div>
+        <div class="cta-box-side">
+          <p class="cta-box-desc">Uma página, editável em Google Docs, com escopo, prazos, pagamento parcelado e cláusula de multa.</p>
+          <a href="#" class="cta-box-btn">Baixar modelo .docx →</a>
+        </div>
+      </div>
+    </section>
+
+    <Newsletter />
+    <Footer />
+  </main>
+</Base>

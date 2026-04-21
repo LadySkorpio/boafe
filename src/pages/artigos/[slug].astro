@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const artigos = await getCollection('artigos');
+  return artigos.map((a) => ({ params: { slug: a.id }, props: { artigo: a } }));
+}
+
+interface Props { artigo: CollectionEntry<'artigos'>; }
+const { artigo } = Astro.props;
+const { Content } = await render(artigo);
+const corHex: Record<string, string> = { yellow: '#F5C528', teal: '#1AABBA', red: '#C0273A', orange: '#E85D2A' };
+const fmt = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+---
+<Base title={`${artigo.data.title} — BOAFÉ`} description={artigo.data.description}>
+  <Nav />
+  <main>
+    <Breadcrumb items={[{ label: 'Artigos', href: '/artigos' }, { label: artigo.data.title }]} />
+    <article class="article-page">
+      <div class="article-meta">
+        <span>
+          <span class="tag-dot" style={`background:${corHex[artigo.data.cor]}`}></span>
+          {artigo.data.categoria}
+        </span>
+        <span>{fmt.format(artigo.data.date)}</span>
+      </div>
+      <h1>{artigo.data.title}</h1>
+      <div class="prose">
+        <Content />
+      </div>
+    </article>
+    <Newsletter />
+    <Footer />
+  </main>
+</Base>

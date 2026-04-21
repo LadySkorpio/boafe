@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getCollection } from 'astro:content';
+
+const artigos = (await getCollection('artigos')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+const corHex: Record<string, string> = { yellow: '#F5C528', teal: '#1AABBA', red: '#C0273A', orange: '#E85D2A' };
+const fmt = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
+---
+<Base title="Artigos — BOAFÉ">
+  <Nav />
+  <main>
+    <Breadcrumb items={[{ label: 'Artigos' }]} />
+    <div class="list-page">
+      <div class="list-page-eyebrow">Arquivo</div>
+      <h1>Artigos</h1>
+      <p class="list-page-lead">Artigos para ler antes de fechar o orçamento</p>
+    </div>
+
+    <section class="articles-section container" style="border-top: none; padding-top: 0;">
+      <div class="articles-grid">
+        {artigos.map((a) => (
+          <a href={`/artigos/${a.id}`} class="article-card">
+            <div class="article-meta">
+              <span>
+                <span class="tag-dot" style={`background:${corHex[a.data.cor]}`}></span>
+                {a.data.categoria}
+              </span>
+              <span>{fmt.format(a.data.date)}</span>
+            </div>
+            <h3>{a.data.title}</h3>
+            <p>{a.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <Newsletter />
+    <Footer />
+  </main>
+</Base>

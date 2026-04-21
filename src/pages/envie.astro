@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+<Base title="Envie o seu calote — BOAFÉ" description="Compartilhe sua experiência com calote. Publicamos histórias para ajudar outros freelancers — sempre com identidade protegida.">
+  <Nav />
+  <main>
+    <Breadcrumb items={[{ label: 'Envie o seu calote' }]} />
+    <div class="list-page">
+      <div class="list-page-eyebrow">Relatos</div>
+      <h1>Envie o seu <span class="accent-red">calote.</span></h1>
+      <p class="list-page-lead">Sua história pode ajudar outra pessoa a não cair na mesma. Conte o que aconteceu — o que funcionou, o que não funcionou — e publicamos como estudo de caso.</p>
+    </div>
+
+    <section class="form-section container">
+      <div class="form-grid">
+        <aside class="form-aside">
+          <div class="form-aside-label">Anonimato</div>
+          <p class="form-disclaimer">
+            <strong>Sua identidade não será revelada.</strong> Publicamos apenas o conteúdo do relato, sem nome, email ou qualquer dado que permita identificar você ou o cliente. O nome e email que você fornece servem só para eventual contato da nossa parte.
+          </p>
+        </aside>
+
+        <form class="calote-form" action="https://formsubmit.co/me@hellen.design" method="POST">
+          <input type="hidden" name="_subject" value="Novo relato de calote — BOAFÉ" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="/obrigado" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <span class="field-help">Usamos apenas para entrar em contato, se necessário.</span>
+          </div>
+
+          <div class="field">
+            <label for="descricao">Descrição do calote</label>
+            <textarea id="descricao" name="descricao" rows="8" required placeholder="Conte o que aconteceu: tipo de projeto, valor, sinais de alerta, como terminou..."></textarea>
+          </div>
+
+          <div class="field field-check">
+            <input type="checkbox" id="privacidade" name="privacidade" required />
+            <label for="privacidade">
+              Concordo com a <a href="/politica-de-privacidade">política de privacidade</a> e autorizo a publicação do relato de forma anônima.
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit">Enviar relato →</button>
+        </form>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Base>

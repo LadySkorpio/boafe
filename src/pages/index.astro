@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { getCollection } from 'astro:content';
+
+const artigos = (await getCollection('artigos'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+
+const corHex: Record<string, string> = {
+  yellow: '#F5C528', teal: '#1AABBA', red: '#C0273A', orange: '#E85D2A',
+};
+const fmt = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
+---
+<Base>
+  <Nav />
+
+  <main>
+    <div class="floating-bars" aria-hidden="true">
+      <img src="/images/barraamarela.svg" alt="" class="fbar fbar-1" data-speed="0.15" />
+      <img src="/images/barracermelha.svg" alt="" class="fbar fbar-2" data-speed="0.28" />
+      <img src="/images/barraazul.svg" alt="" class="fbar fbar-3" data-speed="0.2" />
+      <img src="/images/barralaranja.svg" alt="" class="fbar fbar-4" data-speed="0.35" />
+    </div>
+    <section class="hero container">
+      <span class="hero-eyebrow">
+        <span class="dot"></span>
+        Manifesto anti-calote
+      </span>
+
+      <h1 class="h1">
+        O cliente <span class="underline">sumiu</span>. As lições <span class="underline-blue">ficaram.</span>
+      </h1>
+
+      <div class="hero-intro">
+        <div class="hero-intro-label">Introdução</div>
+        <div class="hero-intro-body">
+          <p><em>Boa-fé</em> é um princípio jurídico que pressupõe honestidade nas relações. Este site existe porque nem todo mundo leu esse capítulo.</p>
+          <p>Aqui reunimos dicas, modelos e artigos para designers, desenvolvedores e prestadores de serviço pararem de levar calote. Sem juridiquês. Sem coaching. Com ironia moderada.</p>
+          <p>A própria marca deste site nasceu de um calote. Ela ficou sem dono porque o cliente sumiu sem pagar. Por isso a iniciativa de transformar a história numa plataforma para proteger quem ainda vai passar pelo mesmo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="definition container" aria-label="Definição de caloteiro">
+      <div class="definition-inner">
+        <img src="/images/definicao.jpg" alt="Caloteiro [ca·lo·tei·ro] adjetivo/substantivo — Que ou quem não paga o que deve por falta de vontade ou por má-fé." />
+      </div>
+    </section>
+
+    <section class="big-blocks container">
+      <a href="/mandamentos" class="big-block">
+        <h2 class="big-block-title">Evite</h2>
+        <div class="big-block-side">
+          <span class="big-block-dot"></span>
+          <p class="big-block-desc">Os 10 mandamentos que todo caloteiro segue à risca. Reconheça os padrões antes de assinar o orçamento.</p>
+          <span class="big-block-cta">Ler os 10 mandamentos →</span>
+        </div>
+      </a>
+      <a href="/dicas" class="big-block reverse">
+        <h2 class="big-block-title">Dicas</h2>
+        <div class="big-block-side">
+          <span class="big-block-dot"></span>
+          <p class="big-block-desc">10 formas práticas de reconhecer um caloteiro antes de começar o trabalho. Kit de defesa básico para freelancers.</p>
+          <span class="big-block-cta">Ver dicas →</span>
+        </div>
+      </a>
+    </section>
+
+    <section class="articles-section container">
+      <div class="section-head">
+        <h2>Últimos artigos</h2>
+        <a href="/artigos">Ver todos →</a>
+      </div>
+      <div class="articles-grid">
+        {artigos.map((a) => (
+          <a href={`/artigos/${a.id}`} class="article-card">
+            <div class="article-meta">
+              <span>
+                <span class="tag-dot" style={`background:${corHex[a.data.cor]}`}></span>
+                {a.data.categoria}
+              </span>
+              <span>{fmt.format(a.data.date)}</span>
+            </div>
+            <h3>{a.data.title}</h3>
+            <p>{a.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <Newsletter />
+    <Footer />
+  </main>
+</Base>
+
+<script>
+  const bars = document.querySelectorAll<HTMLImageElement>('.fbar');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && bars.length) {
+    let ticking = false;
+    const update = () => {
+      const y = window.scrollY;
+      bars.forEach((el) => {
+        const speed = parseFloat(el.dataset.speed || '0.2');
+        el.style.transform = `translate3d(0, ${-y * speed}px, 0) rotate(var(--rot, 0deg))`;
+      });
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  }
+</script>

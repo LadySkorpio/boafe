@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Newsletter from '../components/Newsletter.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { mandamentos } from '../data/content';
+---
+<Base title="Os 10 Mandamentos do Caloteiro — BOAFÉ">
+  <Nav />
+  <main>
+    <Breadcrumb items={[{ label: 'Mandamentos' }]} />
+    <div class="list-page">
+      <h1>Os 10 <span class="accent-red">Mandamentos</span> do Caloteiro</h1>
+      <p class="list-page-lead">Dez comportamentos que se repetem, quase litúrgicos, em quem não pretende pagar. Reconhecer é metade do trabalho.</p>
+
+      <ol class="items">
+        {mandamentos.map((m) => (
+          <li class="item">
+            <span class="item-num"></span>
+            <div>
+              <div class="item-title">{m.title}</div>
+              <p class="item-body">{m.body}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+    <Newsletter />
+    <Footer />
+  </main>
+</Base>

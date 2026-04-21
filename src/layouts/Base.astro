@@ -1,0 +1,18 @@
+---
+import '../styles/global.css';
+interface Props { title?: string; description?: string; }
+const { title = 'BOAFÉ — Porque "minha palavra vale" não paga contas', description = 'Plataforma para freelancers e prestadores de serviço. Artigos, perfis de caloteiros e recursos práticos para quem trabalha por conta própria.' } = Astro.props;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/logos/icone-1@300x.png" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

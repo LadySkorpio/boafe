@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Newsletter from '../components/Newsletter.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+<Base title="Sobre — BOAFÉ" description="A história por trás do BOAFÉ: um projeto nascido de um calote, agora plataforma para quem trabalha por conta própria.">
+  <Nav />
+  <main>
+    <Breadcrumb items={[{ label: 'Sobre' }]} />
+    <div class="list-page">
+      <div class="list-page-eyebrow">Sobre o projeto</div>
+      <h1>Nasceu de um <span class="accent-red">calote.</span> Virou manifesto.</h1>
+      <p class="list-page-lead">O Boa Fé nasceu de uma conta que não caiu. É um espaço para freelancers, autônomos e pequenos estúdios reconhecerem os sinais antes de assinar o orçamento.</p>
+    </div>
+
+    <section class="about-section container">
+      <div class="about-grid">
+        <div class="about-label">A origem</div>
+        <div class="about-body">
+          <p>A própria marca deste site nasceu de um projeto que nunca foi pago. O cliente sumiu, o trabalho ficou pronto, e a identidade visual ficou sem dono, esperando uma segunda vida.</p>
+          <p>Em vez de engavetar, decidimos transformar o prejuízo em ferramenta pública. O nome <em>Boa-fé</em> é uma provocação: o princípio jurídico que deveria reger qualquer relação de trabalho, mas que tanta gente trata como sugestão.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-label">Por que existe</div>
+        <div class="about-body">
+          <p>Na faculdade ninguém ensina a ler um cliente. Ninguém explica por que aquele briefing perfeito esconde um calote em formação, nem como cobrar sem soar desesperado.</p>
+          <p>Este site reúne o que gostaríamos de ter lido antes: padrões de comportamento de quem não paga, dicas práticas de proteção, contratos, estudos de caso reais e uma comunidade que já passou pelo mesmo.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-label">Para quem</div>
+        <div class="about-body">
+          <p>Freelancers de design, redação, desenvolvimento, foto, vídeo, ilustração, consultoria. Qualquer pessoa que emite nota, manda orçamento e depende do "sim" do outro lado para pagar o aluguel.</p>
+          <p>Se você já ouviu "a gente resolve depois", "é só um teste", ou "o orçamento ainda não foi aprovado, mas pode começar", este espaço é seu.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-label">O que você encontra</div>
+        <div class="about-body">
+          <p><strong>Mandamentos.</strong> O decálogo não-oficial do caloteiro, para reconhecer os padrões antes de aceitar o projeto.</p>
+          <p><strong>Dicas.</strong> Kit de defesa básico: o que pedir, o que evitar, o que registrar.</p>
+          <p><strong>Artigos.</strong> Análises, estudos de caso e recursos práticos atualizados regularmente.</p>
+        </div>
+      </div>
+    </section>
+
+    <Newsletter />
+    <Footer />
+  </main>
+</Base>

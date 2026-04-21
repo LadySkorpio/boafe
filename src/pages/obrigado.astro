@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Base title="Obrigado — BOAFÉ" description="Recebemos sua mensagem.">
+  <Nav />
+  <main>
+    <div class="list-page">
+      <div class="list-page-eyebrow">Recebido</div>
+      <h1>Obrigado. <span class="accent-teal">Chegou aqui.</span></h1>
+      <p class="list-page-lead">Sua mensagem foi enviada com sucesso. Se fizer sentido, entramos em contato. Enquanto isso, fica à vontade pra explorar o resto do site.</p>
+      <p style="margin-top: 32px;"><a href="/" style="border-bottom: 1.5px solid currentColor; font-weight: 500;">← Voltar para o início</a></p>
+    </div>
+    <Footer />
+  </main>
+</Base>

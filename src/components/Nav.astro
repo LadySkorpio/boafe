@@ -1,0 +1,64 @@
+---
+---
+<header class="nav">
+  <a href="/" class="nav-brand" aria-label="BOAFÉ home">
+    <img src="/logos/boafe-1@300x.png" alt="BOAFÉ" class="nav-logo" />
+  </a>
+
+  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="primary-nav" class="nav-links" aria-label="Navegação principal">
+    <div class="nav-drawer-header">
+      <a href="/" class="nav-brand" aria-label="BOAFÉ home">
+        <img src="/logos/boafe-1@300x.png" alt="BOAFÉ" class="nav-logo" />
+      </a>
+      <button class="nav-close" aria-label="Fechar menu" type="button">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="5" y1="5" x2="19" y2="19" />
+          <line x1="19" y1="5" x2="5" y2="19" />
+        </svg>
+      </button>
+    </div>
+    <div class="nav-drawer-list">
+      <a href="/mandamentos" data-label="→">Mandamentos</a>
+      <a href="/dicas" data-label="→">Dicas</a>
+      <a href="/artigos" data-label="→">Artigos</a>
+      <a href="/sobre" data-label="→">Sobre</a>
+      <a href="/envie" data-label="→" class="nav-link-mobile-only">Envie o seu calote</a>
+    </div>
+  </nav>
+
+  <a href="/envie" class="nav-cta-desktop">Envie o seu calote →</a>
+</header>
+
+<script>
+  const btn = document.querySelector('.nav-toggle');
+  const closeBtn = document.querySelector('.nav-close');
+  const nav = document.getElementById('primary-nav');
+  const close = () => {
+    document.body.classList.remove('nav-open');
+    btn?.setAttribute('aria-expanded', 'false');
+    btn?.setAttribute('aria-label', 'Abrir menu');
+  };
+  const open = () => {
+    document.body.classList.add('nav-open');
+    btn?.setAttribute('aria-expanded', 'true');
+    btn?.setAttribute('aria-label', 'Fechar menu');
+  };
+  btn?.addEventListener('click', () => {
+    document.body.classList.contains('nav-open') ? close() : open();
+  });
+  closeBtn?.addEventListener('click', close);
+  nav?.querySelectorAll('.nav-drawer-list a').forEach((a) => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+  const header = document.querySelector('.nav');
+  const onScroll = () => {
+    if (window.scrollY > 8) header?.classList.add('scrolled');
+    else header?.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
