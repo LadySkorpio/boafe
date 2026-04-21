@@ -873,20 +873,20 @@ main { position: relative; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 28px;
+    gap: 0;
     padding: 0 clamp(20px, 6vw, 40px) 10vh;
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: clamp(28px, 7vw, 44px);
+    font-size: clamp(26px, 6.2vw, 38px);
     letter-spacing: -0.02em;
-    text-transform: uppercase;
   }
   .nav-drawer-list a {
-    padding: 8px 0;
-    border-bottom: 1.5px solid transparent;
-    align-self: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(10,10,10,0.12);
+    align-self: stretch;
   }
-  .nav-drawer-list a:hover { border-bottom-color: var(--ink); }
+  .nav-drawer-list a:first-child { border-top: 1px solid rgba(10,10,10,0.12); }
+  .nav-drawer-list a:hover { color: var(--red); }
   body.nav-open .nav-links { transform: translateX(0); }
   body.nav-open { overflow: hidden; }
 
