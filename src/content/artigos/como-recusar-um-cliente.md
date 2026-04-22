@@ -57,7 +57,7 @@ Isso é prévia. Vai continuar assim depois do pagamento. Recuse agora, economiz
 
 ### 5. Alteração infinita num projeto encerrado
 
-Cliente que já pagou, recebeu, e três meses depois volta pedindo "só uma ajustezinho". Se não tem cláusula de revisões pagas no contrato, o ajuste vira cinco horas e ninguém quer pagar.
+Cliente que já pagou, recebeu, e três meses depois volta pedindo "só um ajustezinho". Se não tem cláusula de revisões pagas no contrato, o ajuste vira cinco horas e ninguém quer pagar.
 
 Resposta: *"O escopo original foi entregue e encerrado. Consigo fazer esse ajuste como novo orçamento, R$ [valor] por [prazo]. Se fizer sentido, te mando proposta."*
 
