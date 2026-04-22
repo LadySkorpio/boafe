@@ -1,7 +1,7 @@
 ---
 title: "Prestar serviço sem CNPJ: dá, mas tem regra"
 description: "Como assinar um contrato de prestação de serviços usando só o seu CPF, o que precisa constar, e o que o cliente PJ é obrigado a reter."
-date: 2026-04-26
+date: 2026-04-20
 cor: teal
 categoria: "Prática"
 ---

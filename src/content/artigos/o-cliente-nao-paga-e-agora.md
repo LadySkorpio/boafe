@@ -1,7 +1,7 @@
 ---
 title: "O cliente não paga. E agora?"
 description: "Três cenários, três caminhos: cliente que trava antes de começar, cliente que atrasa no meio, e cliente que some depois da entrega. Um guia prático."
-date: 2026-04-24
+date: 2026-04-21
 cor: red
 categoria: "Prática"
 ---
