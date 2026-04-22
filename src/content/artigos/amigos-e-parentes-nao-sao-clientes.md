@@ -1,5 +1,5 @@
 ---
-title: "Amigos e parentes não são clientes"
+title: "Trate amigos e parentes como clientes"
 description: "Quando a pessoa é próxima, o 'depois a gente acerta' vira nunca. Cobre sempre, pode dar desconto, mas cobre."
 date: 2026-04-22
 cor: yellow
