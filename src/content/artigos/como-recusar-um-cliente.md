@@ -1,7 +1,7 @@
 ---
 title: "Como recusar um cliente?"
 description: "Dizer não é parte do ofício. Quando recusar, como recusar, e por que um não bem dado protege mais do que um sim mal feito."
-date: 2026-04-28
+date: 2026-04-22
 cor: orange
 categoria: "Comportamento"
 ---
