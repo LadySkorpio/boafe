@@ -1,0 +1,306 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+<Base title="Identidade Visual — BOAFÉ" description="Guia de marca do BOAFÉ: paleta, tipografia, logo, elementos visuais, tom de voz e uso.">
+  <Nav />
+  <main class="brand-page">
+    <Breadcrumb items={[{ label: 'Identidade' }]} />
+
+    <div class="list-page">
+      <div class="list-page-eyebrow">Brand guideline</div>
+      <h1>A <span class="accent-teal">identidade</span> do BOAFÉ</h1>
+      <p class="list-page-lead">Paleta, tipografia, logo, elementos visuais e tom de voz. Um resumo do que faz o Boa Fé parecer com Boa Fé.</p>
+      <button type="button" class="brand-download" onclick="window.print()">Baixar PDF →</button>
+    </div>
+
+    <section class="brand-section container">
+      <h2 class="brand-h2">01. Logo</h2>
+      <div class="brand-logo-box">
+        <img src="/logos/boafe-1@300x.png" alt="Logo BOAFÉ" />
+      </div>
+      <p class="brand-note">A logo é desenhada em Stardos Stencil sobre estrutura modular. Usar sempre com espaço mínimo de respiro equivalente à altura da letra "O". Não distorcer, não aplicar sombra, não trocar a cor dos blocos coloridos.</p>
+    </section>
+
+    <section class="brand-section container">
+      <h2 class="brand-h2">02. Paleta</h2>
+      <div class="brand-palette">
+        <div class="swatch" style="background:#F7F4EC;color:#0A0A0A;">
+          <div class="swatch-name">Papel</div>
+          <div class="swatch-hex">#F7F4EC</div>
+          <div class="swatch-use">Fundo principal</div>
+        </div>
+        <div class="swatch" style="background:#0A0A0A;color:#F7F4EC;">
+          <div class="swatch-name">Tinta</div>
+          <div class="swatch-hex">#0A0A0A</div>
+          <div class="swatch-use">Texto principal</div>
+        </div>
+        <div class="swatch" style="background:#F5C528;color:#0A0A0A;">
+          <div class="swatch-name">Amarelo</div>
+          <div class="swatch-hex">#F5C528</div>
+          <div class="swatch-use">Categoria Comportamento</div>
+        </div>
+        <div class="swatch" style="background:#1AABBA;color:#F7F4EC;">
+          <div class="swatch-name">Teal</div>
+          <div class="swatch-hex">#1AABBA</div>
+          <div class="swatch-use">Categoria Prática</div>
+        </div>
+        <div class="swatch" style="background:#C0273A;color:#F7F4EC;">
+          <div class="swatch-name">Vermelho</div>
+          <div class="swatch-hex">#C0273A</div>
+          <div class="swatch-use">Categoria Jurídico / alerta</div>
+        </div>
+        <div class="swatch" style="background:#E85D2A;color:#F7F4EC;">
+          <div class="swatch-name">Laranja</div>
+          <div class="swatch-hex">#E85D2A</div>
+          <div class="swatch-use">Categoria Crítica</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-section container">
+      <h2 class="brand-h2">03. Tipografia</h2>
+
+      <div class="brand-type-block">
+        <div class="brand-type-label">Display</div>
+        <div class="brand-type-sample" style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 64px; line-height: 0.95; letter-spacing: -0.035em;">Manrope 800</div>
+        <div class="brand-type-meta">Títulos, hero, headlines. Pesos fortes, letter-spacing negativo.</div>
+      </div>
+
+      <div class="brand-type-block">
+        <div class="brand-type-label">Corpo</div>
+        <div class="brand-type-sample" style="font-family: 'Archivo', sans-serif; font-weight: 400; font-size: 22px; line-height: 1.55;">Archivo Regular, o texto que você está lendo agora. Usamos para parágrafos, descrições e qualquer leitura corrida.</div>
+        <div class="brand-type-meta">Archivo Regular / Medium. Alturas de linha entre 1.5 e 1.75.</div>
+      </div>
+
+      <div class="brand-type-block">
+        <div class="brand-type-label">Acento</div>
+        <div class="brand-type-sample" style="font-family: 'Stardos Stencil', serif; font-weight: 700; font-size: 56px; letter-spacing: 0.02em;">BOAFÉ</div>
+        <div class="brand-type-meta">Stardos Stencil. Apenas para a marca e destaques gráficos pontuais.</div>
+      </div>
+    </section>
+
+    <section class="brand-section container">
+      <h2 class="brand-h2">04. Elementos gráficos</h2>
+      <div class="brand-elements">
+        <div class="brand-element">
+          <img src="/images/barraamarela.svg" alt="Barra amarela" />
+          <div class="brand-element-label">Barras inclinadas</div>
+          <p>Blocos de cor rotacionados entre -18° e +22°. Usados como elementos de fundo com parallax leve no hero. Nunca atrás de texto corrido.</p>
+        </div>
+        <div class="brand-element">
+          <span class="brand-underline-sample">sumiu</span>
+          <div class="brand-element-label">Grifo colorido</div>
+          <p>Linha grossa sob palavras-chave em títulos. Usa amarelo, teal ou vermelho. Inclinação sutil (-8°).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-section container">
+      <h2 class="brand-h2">05. Tom de voz</h2>
+      <ul class="brand-voice">
+        <li><strong>Afirmativo, direto, seco.</strong> Frases curtas. Sem adjetivos em excesso.</li>
+        <li><strong>Ironia moderada.</strong> Nunca sarcasmo. Nunca mau humor.</li>
+        <li><strong>Sem juridiquês.</strong> Explicamos direito sem parecer cartório.</li>
+        <li><strong>Sem motivacional.</strong> O leitor é adulto e cansado.</li>
+        <li><strong>Sem travessões.</strong> Usamos vírgula, ponto ou parêntese.</li>
+        <li><strong>Sem emojis decorativos.</strong> Nem no corpo nem nos títulos.</li>
+        <li><strong>Português brasileiro informal profissional.</strong> Fala com o leitor como igual.</li>
+      </ul>
+    </section>
+
+    <section class="brand-section container">
+      <h2 class="brand-h2">06. Categorias e cor</h2>
+      <table class="brand-table">
+        <thead>
+          <tr><th>Categoria</th><th>Cor dominante</th><th>Uso</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Prática</td><td><span class="dot" style="background:#1AABBA"></span> Teal</td><td>Guias aplicáveis, contratos, impostos, cobrança</td></tr>
+          <tr><td>Comportamento</td><td><span class="dot" style="background:#F5C528"></span> Amarelo</td><td>Psicologia do cliente, padrões, relação</td></tr>
+          <tr><td>Jurídico</td><td><span class="dot" style="background:#C0273A"></span> Vermelho</td><td>Lei, direitos, processos</td></tr>
+          <tr><td>Crítica</td><td><span class="dot" style="background:#E85D2A"></span> Laranja</td><td>Opinião, análise de mercado</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="brand-section container">
+      <h2 class="brand-h2">07. O que não fazer</h2>
+      <ul class="brand-dont">
+        <li>Não usar gradientes suaves nem sombras artificiais.</li>
+        <li>Não aplicar emoji como ícone.</li>
+        <li>Não inclinar o logo.</li>
+        <li>Não trocar as cores da marca por variações não listadas.</li>
+        <li>Não usar linguagem de coach ou guru.</li>
+        <li>Não prometer solução fácil. O site não vende atalho.</li>
+      </ul>
+    </section>
+
+    <footer class="brand-footer container">
+      <p>Guia vivo, atualizado em 22/04/2026. Dúvidas sobre uso da marca: <a href="mailto:me@hellen.design">me@hellen.design</a>.</p>
+    </footer>
+
+    <Footer />
+  </main>
+</Base>
+
+<style>
+  .brand-page main { background: var(--paper); }
+  .brand-section { padding: 56px 0; border-top: 1px solid rgba(10,10,10,0.1); }
+  .brand-h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 44px);
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+  }
+  .brand-download {
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 14px 22px;
+    border-radius: 999px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+  .brand-download:hover { transform: translateX(4px); }
+
+  .brand-logo-box {
+    background: #fff;
+    border: 1px solid rgba(10,10,10,0.1);
+    border-radius: 12px;
+    padding: 56px;
+    display: flex;
+    justify-content: center;
+  }
+  .brand-logo-box img { max-height: 140px; width: auto; }
+  .brand-note { max-width: 60ch; margin-top: 20px; opacity: 0.8; }
+
+  .brand-palette {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .swatch {
+    border-radius: 12px;
+    padding: 32px 24px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid rgba(10,10,10,0.08);
+  }
+  .swatch-name { font-weight: 700; font-size: 20px; }
+  .swatch-hex { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; opacity: 0.85; margin-top: 4px; }
+  .swatch-use { font-size: 13px; margin-top: 12px; opacity: 0.75; }
+
+  .brand-type-block { margin-bottom: 48px; }
+  .brand-type-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.6;
+    margin-bottom: 12px;
+  }
+  .brand-type-sample { margin-bottom: 8px; color: var(--ink); }
+  .brand-type-meta { font-size: 14px; opacity: 0.7; }
+
+  .brand-elements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .brand-element {
+    background: #fff;
+    border: 1px solid rgba(10,10,10,0.1);
+    border-radius: 12px;
+    padding: 32px;
+    min-height: 220px;
+  }
+  .brand-element img { max-height: 100px; }
+  .brand-element-label { font-weight: 700; margin: 20px 0 8px; }
+  .brand-underline-sample {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 48px;
+    position: relative;
+    display: inline-block;
+  }
+  .brand-underline-sample::after {
+    content: '';
+    position: absolute;
+    left: -4px; right: -4px; bottom: 0.04em;
+    height: 0.18em;
+    background: var(--yellow);
+    z-index: -1;
+    transform: skewX(-8deg);
+  }
+
+  .brand-voice, .brand-dont {
+    list-style: none;
+    padding: 0;
+    max-width: 70ch;
+  }
+  .brand-voice li, .brand-dont li {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(10,10,10,0.08);
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .brand-dont li::before { content: '× '; color: var(--red); font-weight: 700; margin-right: 8px; }
+
+  .brand-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .brand-table th, .brand-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(10,10,10,0.1);
+  }
+  .brand-table th { font-weight: 700; opacity: 0.7; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+
+  .brand-footer {
+    padding: 40px 0 80px;
+    font-size: 14px;
+    opacity: 0.65;
+  }
+
+  @media (max-width: 768px) {
+    .brand-palette { grid-template-columns: repeat(2, 1fr); }
+    .brand-elements { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) {
+    .brand-palette { grid-template-columns: 1fr; }
+  }
+
+  /* Print styles — vira PDF bonito */
+  @media print {
+    :global(.nav),
+    :global(.breadcrumb),
+    :global(.newsletter),
+    :global(footer.footer),
+    .brand-download {
+      display: none !important;
+    }
+    .brand-page main { background: #fff !important; }
+    .brand-section {
+      page-break-inside: avoid;
+      padding: 32px 0;
+      border-top: 1px solid #ddd;
+    }
+    .brand-h2 { font-size: 26px; margin-bottom: 24px; }
+    .swatch { min-height: 130px; padding: 20px; }
+    body { font-size: 12pt; }
+    a { color: inherit; text-decoration: none; }
+    .brand-logo-box, .brand-element { background: #fff !important; }
+    @page { margin: 18mm; }
+  }
+</style>
+</Base>
