@@ -24,14 +24,6 @@ Lembrando aqui a mensagem de Natal que enviei para o caloteiro que me contratou 
 
 ---
 
-## Por que este relato importa
-
-Sete mil reais. Centenas de artes. Noites em claro. Meses de promessa. Um cliente que sabia, desde o começo, que não ia pagar.
-
-Esse texto é um soco no estômago de quem trabalha por conta própria, porque qualquer um que já passou por isso reconhece o roteiro: a confiança depositada na palavra do outro, as justificativas que vão se acumulando, o "semana que vem destrava", a esperança que insiste em ficar até virar mágoa.
-
-A pessoa que enviou esse relato não está pedindo conselho. Está registrando. Tornando público o que normalmente fica engasgado num grupo de freelancers ou num desabafo de fim de ano. E é exatamente por isso que o BOAFÉ existe: pra que esse tipo de história deixe de ser só dor privada e vire alerta coletivo.
-
 ## O que fica
 
 O calote não é só financeiro. Ele respinga, como o próprio relato diz, "em diferentes locais da minha percepção sobre as coisas". Na confiança em clientes futuros. Na disposição de aceitar um novo projeto sem desconfiar. Na maneira de lidar com promessa, com prazo, com palavra dada.
