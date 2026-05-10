@@ -2,7 +2,11 @@
 const year = new Date().getFullYear();
 ---
 <footer class="footer container">
-  <span>© {year} BOAFÉ</span>
+  <span class="footer-copy">
+    © {year} BOAFÉ
+    <span class="footer-sep" aria-hidden="true">·</span>
+    <a href="https://www.skorpiolab.com" target="_blank" rel="noopener noreferrer" class="footer-credit">Made by SkorpioLab</a>
+  </span>
   <a href="/politica-de-privacidade">Política de Privacidade</a>
   <span>Feito com boa-fé, claro.</span>
 </footer>

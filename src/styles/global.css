@@ -678,11 +678,27 @@ main { position: relative; }
   font-size: 13px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
   border-top: 1.5px solid var(--ink);
   font-family: var(--font-stencil);
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
+.footer .footer-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.footer .footer-sep { opacity: 0.5; }
+.footer .footer-credit {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer .footer-credit:hover { color: #C0273A; }
 
 /* BREADCRUMB */
 .breadcrumb {
