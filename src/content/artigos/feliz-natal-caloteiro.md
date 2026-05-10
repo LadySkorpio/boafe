@@ -8,19 +8,17 @@ categoria: "Relatos"
 
 *Este é o primeiro relato recebido pelo formulário da página [Envie o seu calote](/envie). Publicado na íntegra, com o consentimento de quem enviou. Os nomes foram omitidos.*
 
----
-
 Lembrando aqui a mensagem de Natal que enviei para o caloteiro que me contratou e não pagou:
 
-> Olá [nome], escrevo apenas pelo desejo de encerrar de uma vez por todas esse capítulo decrépito não só da minha carreira profissional, mas da minha vida como um todo. Toda a situação causada unilateralmente por você, respingou em diferentes locais da minha percepção sobre as coisas. Durante os meses em que eu depositava minha confiança na sua palavra, que pra mim era até então o bem mais precioso que alguém poderia ter, insistia em me fazer ter esperança, em acreditar que no final tudo daria certo. Eu acabei agindo na emoção, em acreditar nas falsas promessas que você me fazia, em acreditar nas muitas justificativas que você me dava, em acreditar nas promessas mentirosas que você me fez.
+> *Olá [nome], escrevo apenas pelo desejo de encerrar de uma vez por todas esse capítulo decrépito não só da minha carreira profissional, mas da minha vida como um todo. Toda a situação causada unilateralmente por você, respingou em diferentes locais da minha percepção sobre as coisas. Durante os meses em que eu depositava minha confiança na sua palavra, que pra mim era até então o bem mais precioso que alguém poderia ter, insistia em me fazer ter esperança, em acreditar que no final tudo daria certo. Eu acabei agindo na emoção, em acreditar nas falsas promessas que você me fazia, em acreditar nas muitas justificativas que você me dava, em acreditar nas promessas mentirosas que você me fez.*
 >
-> Mas sabe [nome], não é que eu acredite em karma ou que deseje o seu mal, mas eu tenho a convicção que você vai pagar o que me deve um dia. Não é crença, não é fé. Convicção. Se não for materialmente, acho que a solidão vai ser o pagamento pelo que você me deve.
+> *Mas sabe [nome], não é que eu acredite em karma ou que deseje o seu mal, mas eu tenho a convicção que você vai pagar o que me deve um dia. Não é crença, não é fé. Convicção. Se não for materialmente, acho que a solidão vai ser o pagamento pelo que você me deve.*
 >
-> Saiba que os 7 mil reais do tempo que você me tomou estão guardados de uma pasta separada. Te divertiu encomendar centenas de artes com a certeza que não me pagaria pelo meu trabalho? Saiba que nessa pasta também estão as noites que passei em claro criando cada parte do projeto e o mal sentimento de receber mais um prazo, mesmo que lá no fundo eu soubesse que esse não seria o dia.
+> *Saiba que os 7 mil reais do tempo que você me tomou estão guardados de uma pasta separada. Te divertiu encomendar centenas de artes com a certeza que não me pagaria pelo meu trabalho? Saiba que nessa pasta também estão as noites que passei em claro criando cada parte do projeto e o mal sentimento de receber mais um prazo, mesmo que lá no fundo eu soubesse que esse não seria o dia.*
 >
-> Que ninguém nunca seja tão perverso pra você quanto você foi pra mim.
+> *Que ninguém nunca seja tão perverso pra você quanto você foi pra mim.*
 >
-> No mais, um Feliz Natal.
+> *No mais, um Feliz Natal.*
 
 ---
 
