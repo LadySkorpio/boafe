@@ -815,6 +815,15 @@ main { position: relative; }
   margin: 2em 0 0.6em;
   letter-spacing: -0.02em;
 }
+.article-page .prose a {
+  color: #C0273A;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.article-page .prose a:hover {
+  text-decoration-thickness: 2px;
+}
 
 /* ========== RESPONSIVO ========== */
 
